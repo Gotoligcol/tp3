@@ -1,12 +1,66 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+class Buttons extends React.Component {
+    render(){
+        return(
+            <button className="btn">{this.props.value}</button>
+        )
+    }
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+class ContainerTop extends React.Component {
+    renderBtns(name) {
+        return <Buttons value={name}/>;
+    }
+
+    render() {
+        const name1 = 'Claude';
+        const name2 = 'Martine';
+        const name3 = 'Jeanne';
+        return(
+            <div className="container">
+                {this.renderBtns(name1)}
+                {this.renderBtns(name2)}
+                {this.renderBtns(name3)}
+            </div>
+        )
+    }
+}
+
+class ContainerMid extends React.Component {
+
+    render(){
+        return(
+<div className="oui"></div>
+
+        )
+    }
+}
+
+class ContainerBot extends React.Component{
+    render(){
+        return(
+
+<div className="non"></div>
+        )
+    }
+}
+
+class GlobalContainer extends React.Component {
+    render(){
+        return(
+            <div>
+                <ContainerTop/>
+                <ContainerMid/>
+                <ContainerBot/>
+            </div>
+        )
+    }
+}
+
+ReactDOM.render(
+    <GlobalContainer />,
+    document.getElementById('root')
+);
