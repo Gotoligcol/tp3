@@ -1,19 +1,17 @@
 .btn
 {
-    border: 5px solid black;
+    border: 2px solid black;
+
 }
 
 .container
 {
+    display: flex;
+    justify-content: space-around;
     border: 5px solid black;
-}
-
-.oui
-{
-    border: 5px solid rebeccapurple;
-}
-
-.non
-{
-    border: 5px solid blue;
+    height: auto;
+    width: 75%;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 20px;
 }

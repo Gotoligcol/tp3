@@ -19,6 +19,7 @@ class ContainerTop extends React.Component {
         const name1 = 'Claude';
         const name2 = 'Martine';
         const name3 = 'Jeanne';
+        
         return(
             <div className="container">
                 {this.renderBtns(name1)}
@@ -33,7 +34,7 @@ class ContainerMid extends React.Component {
 
     render(){
         return(
-<div className="oui"></div>
+<div className="container"></div>
 
         )
     }
@@ -43,7 +44,7 @@ class ContainerBot extends React.Component{
     render(){
         return(
 
-<div className="non"></div>
+<div className="container"></div>
         )
     }
 }
