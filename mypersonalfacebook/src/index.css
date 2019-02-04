@@ -15,3 +15,29 @@
     padding: 10px;
     margin-bottom: 20px;
 }
+
+.containerMid
+{
+    background-color: grey;
+    display: flex;
+    justify-content: space-around;
+    border: 5px solid black;
+    height: auto;
+    width: 75%;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.containerBot
+{
+    display: flex;
+    background-color: darkgrey;
+    justify-content: space-around;
+    border: 5px solid black;
+    height: auto;
+    width: 75%;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+}

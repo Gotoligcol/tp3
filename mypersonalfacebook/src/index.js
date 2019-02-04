@@ -5,7 +5,7 @@ import './index.css';
 class Buttons extends React.Component {
     render(){
         return(
-            <button className="btn">{this.props.value}</button>
+            <button className="btn" onClick={() => this.setState({value : this.props.value})}>{this.props.value}</button>
         )
     }
 }
@@ -19,7 +19,7 @@ class ContainerTop extends React.Component {
         const name1 = 'Claude';
         const name2 = 'Martine';
         const name3 = 'Jeanne';
-        
+
         return(
             <div className="container">
                 {this.renderBtns(name1)}
@@ -34,7 +34,9 @@ class ContainerMid extends React.Component {
 
     render(){
         return(
-<div className="container"></div>
+<div className="containerMid">
+
+</div>
 
         )
     }
@@ -44,7 +46,9 @@ class ContainerBot extends React.Component{
     render(){
         return(
 
-<div className="container"></div>
+<div className="containerBot">
+
+</div>
         )
     }
 }
